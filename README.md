@@ -120,8 +120,13 @@ const wallet = await SimpleTokenWallet.deploy();
 await wallet.deposit({ value: ethers.parseEther("1.0") });
 
 // Check balance
+
 const balance = await wallet.getBalance();
 console.log("Balance:", ethers.formatEther(balance), "ETH");
+
+Contract Address : 0x0399fad49B0d0f615fDc903742abc5b8a0145F1E
+
+<img width="1778" height="657" alt="image" src="https://github.com/user-attachments/assets/171cb2fc-c2d4-41b2-b1e6-25e264e6745d" />
 
 // Withdraw 0.5 ETH
 await wallet.withdraw(ethers.parseEther("0.5"));
